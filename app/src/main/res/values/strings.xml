@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Domingo8</string>
+    <string name="textview">TextView</string>
+    <string name="dolares">Dolares</string>
+    <string name="euros">euros</string>
+    <string name="cambioa">CambioA...</string>
+    <string name="convertir">convertir</string>
+    <string name="dolares_a_euros">dolares a euros</string>
+    <string name="euros_a_dolares">euros a dolares</string>
+</resources>

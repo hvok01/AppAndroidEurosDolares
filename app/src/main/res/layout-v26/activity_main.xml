@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lbDolares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dolares" />
+
+    <EditText
+        android:id="@+id/tbDolares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbDolares"
+        android:hint="@android:string/emptyPhoneNumber"
+        android:inputType="number"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/lbEuros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbDolares"
+        android:text="@string/euros" />
+
+    <EditText
+        android:id="@+id/tbEuros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbEuros"
+        android:autofillHints=""
+        android:hint="@string/euros"
+        android:inputType="number" />
+
+    <RadioButton
+        android:id="@+id/rbDolares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbEuros"
+        android:text="@string/dolares" />
+
+    <RadioButton
+        android:id="@+id/rbEuros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbDolares"
+        android:text="@string/euros" />
+
+    <TextView
+        android:id="@+id/lbCambio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbEuros"
+        android:text="@string/cambioa" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbCambio"
+        android:autofillHints=""
+        android:hint="@string/cambioa"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbCambio"
+        android:text="@string/convertir" />
+</RelativeLayout>

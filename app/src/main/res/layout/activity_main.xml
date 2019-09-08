@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lbDolares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dolares" />
+
+    <EditText
+        android:id="@+id/tbDolares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbDolares"
+        android:autofillHints=""
+        android:hint="@string/dolares"
+        android:inputType="number"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/lbEuros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbDolares"
+        android:text="@string/euros" />
+
+    <EditText
+        android:id="@+id/tbEuros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbEuros"
+        android:autofillHints=""
+        android:hint="@string/euros"
+        android:inputType="number" tools:targetApi="o" />
+
+    <RadioGroup
+        android:id="@+id/groupRadios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tbEuros"
+        >
+
+        <RadioButton
+            android:id="@+id/rbDolares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/dolares_a_euros" />
+
+        <RadioButton
+            android:id="@+id/rbEuros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/euros_a_dolares" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/lbCambio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupRadios"
+        android:text="@string/cambioa" />
+
+    <EditText
+        android:id="@+id/tbResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbCambio"
+        android:autofillHints=""
+        android:hint="@string/cambioa"
+        android:inputType="text"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbResultado"
+        android:text="@string/convertir" />
+
+
+</RelativeLayout>
